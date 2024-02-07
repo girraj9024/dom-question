@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>girraj</title>
+</head>
+<body>
+    <h1 style="color: black;background-color: red;height: 50px;margin: 12px -1px;padding: 3px 3px;">thish is  js dom question</h1>
+    <input type="text" placeholder="enter name">
+    <button class="consoleprint">consoleprint</button>
+    <button class="dispalyprint">dislalyprint</button>
+    <p></p>
+    <script>
+        let name =[]
+
+        let but = document.querySelector(".consoleprint")
+        let inp = document.querySelector("input")
+        let dispaly = document.querySelector(".dispalyprint")
+        let pragraf = document.querySelector("p")
+
+        but.addEventListener("click", () => {name.push(inp.value);console.log(name) })
+        dispaly.addEventListener("click", () => {(pragraf.innerHTML=name)})
+
+    </script>
+</body>
+</html>
